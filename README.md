@@ -107,6 +107,8 @@ npm run client:start
 
 6. Set up Metamask to connect to the local blockchain created by Ganache(i.e. [http://localhost:8545/](http://localhost:8545/))
 7. install local ipfs desktop
+   <img width="1292" alt="image" src="https://github.com/user-attachments/assets/e2d6c8fd-f94d-4783-9c13-3a081f4813b2" />
+
    
 7. Now, obtain the private keys of some of the accounts from Ganache and import the accounts into Metamask wallet.
 
