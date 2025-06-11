@@ -23,15 +23,27 @@ const Register = ({mediChain, ipfs, connectWallet, token, account, setToken, set
                     console.log(error);
                     return;
                 }else{
-                    mediChain.methods.register(name, age, parseInt(designation), email, result.path).send({from: account}).on('transactionHash', async (hash) => {
-                        window.location.href = '/login'
-                    })
+                    mediChain.methods.register(name, age, parseInt(designation), email, result.path).send({from: account})
+                        .on('transactionHash', async (hash) => {
+                            console.log('Transaction Hash:', hash);
+                            window.location.href = '/login'
+                        })
+                        .on('error', (error) => {
+                            console.error('Transaction Error:', error);
+                            alert('Registration failed: ' + error.message);
+                        })
                 }
             })
         }else if(account!==""){
-            mediChain.methods.register(name, 0, parseInt(designation), email, "").send({from: account}).on('transactionHash', async (hash) => {
-                window.location.href = '/login'
-            })
+            mediChain.methods.register(name, 0, parseInt(designation), email, "").send({from: account})
+                .on('transactionHash', async (hash) => {
+                    console.log('Transaction Hash:', hash);
+                    window.location.href = '/login'
+                })
+                .on('error', (error) => {
+                    console.error('Transaction Error:', error);
+                    alert('Registration failed: ' + error.message);
+                })
         }
     }
 

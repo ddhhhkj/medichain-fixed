@@ -1,31 +1,61 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Dependencies
-node_modules
+node_modules/
 .pnp
 .pnp.js
+.npm-cache/
 
 # Production
-build
-client/src/contracts
-client/*/src/contracts
+build/
+client/src/contracts/
+client/*/src/contracts/
+truffle/build/
 
 # Testing
-coverage
+coverage/
 
-# Env
+# Environment variables
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Editor
-.vscode
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
 
-# Misc.
-.DS_Store
+# Solidity compilation artifacts
+*.bin
+*.abi
+contracts_*_sol_*.bin
 
+# Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
