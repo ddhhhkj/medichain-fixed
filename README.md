@@ -106,7 +106,13 @@ npm run client:start
 ```
 
 6. Set up Metamask to connect to the local blockchain created by Ganache(i.e. [http://localhost:8545/](http://localhost:8545/))
-7. install local ipfs desktop
+
+   安装ganache
+
+<img width="1125" alt="image" src="https://github.com/user-attachments/assets/4e776535-62e3-4228-919d-18a07ddaf998" />
+
+   
+8. install local ipfs desktop
    <img width="1292" alt="image" src="https://github.com/user-attachments/assets/e2d6c8fd-f94d-4783-9c13-3a081f4813b2" />
 
    
