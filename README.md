@@ -106,7 +106,9 @@ npm run client:start
 ```
 
 6. Set up Metamask to connect to the local blockchain created by Ganache(i.e. [http://localhost:8545/](http://localhost:8545/))
-
+7. install local ipfs desktop
+   
 7. Now, obtain the private keys of some of the accounts from Ganache and import the accounts into Metamask wallet.
 
 8. You're ready to go. Visit [http://localhost:3000/](http://localhost:3000/) to check out MediChain
+   
